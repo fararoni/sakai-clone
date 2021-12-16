@@ -39,6 +39,7 @@ import 'prismjs/themes/prism-coy.css';
 import './layout/flags/flags.css';
 import './layout/layout.scss';
 import './App.scss';
+import Login from './modulos/seguridad/Login';
 
 const App = () => {
 
@@ -151,6 +152,12 @@ const App = () => {
             items: [{
                 label: 'Dashboard', icon: 'pi pi-fw pi-home', to: '/'
             }]
+        },
+        {
+            label: 'Módulos', icon: 'pi pi-fw pi-clone',
+            items: [
+                {label: 'Login', icon: 'pi pi-fw pi-user-edit', to: '/login'},
+            ]
         },
         {
             label: 'UI Kit', icon: 'pi pi-fw pi-sitemap',
@@ -271,6 +278,8 @@ const App = () => {
             <div className="layout-main-container">
                 <div className="layout-main">
                     <Route path="/" exact component={Dashboard}/>
+                    <Route path="/login"  component={Login}/>
+                    
                     <Route path="/formlayout" component={FormLayoutDemo}/>
                     <Route path="/input" component={InputDemo}/>
                     <Route path="/floatlabel" component={FloatLabelDemo}/>

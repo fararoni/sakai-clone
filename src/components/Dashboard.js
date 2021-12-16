@@ -208,7 +208,7 @@ export const Dashboard = () => {
 
             <div className="col-12 xl:col-6">
                 <div className="card">
-                    <h5>Sales Overview</h5>
+                    <h5>Ventas Overview</h5>
                     <Chart type="line" data={lineData} />
                 </div>
 
@@ -267,7 +267,7 @@ export const Dashboard = () => {
                     </div>
                     <div className="mt-4 mr-auto md:mt-0 md:mr-0">
                         <a href="https://www.primefaces.org/primeblocks-react" className="p-button font-bold px-5 py-3 p-button-warning p-button-rounded p-button-raised">
-                            Get Started
+                            Get Startedxxxxxxxxxx
                         </a>
                     </div>
                 </div>
