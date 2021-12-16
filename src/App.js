@@ -267,7 +267,11 @@ const App = () => {
     });
 
     return (
+
+        
         <div className={wrapperClass} onClick={onWrapperClick}>
+            
+
             <AppTopbar onToggleMenuClick={onToggleMenuClick} layoutColorMode={layoutColorMode}
                        mobileTopbarMenuActive={mobileTopbarMenuActive} onMobileTopbarMenuClick={onMobileTopbarMenuClick} onMobileSubTopbarMenuClick={onMobileSubTopbarMenuClick}/>
 
@@ -279,6 +283,8 @@ const App = () => {
                 <div className="layout-main">
                     <Route path="/" exact component={Dashboard}/>
                     <Route path="/login"  component={Login}/>
+                    
+
                     
                     <Route path="/formlayout" component={FormLayoutDemo}/>
                     <Route path="/input" component={InputDemo}/>
